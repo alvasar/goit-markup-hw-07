@@ -1,0 +1,32 @@
+:root {
+    /* fonts */
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+    /* text-colors */
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+
+    /* background color */
+    --primary-background-color: #FFFFFF;
+    --secondary-background-color: #2F303A;
+    --third-background-color: #F5F4FA;
+    --portfolio-item-bg-cl: rgba(33, 150, 243, 0.9);
+
+    /* icon colors */
+    --icon-cl: #AFB1B8;
+    --icon-footer-cl: #44454E;
+
+    /* border color */
+    --portfolio-border-cl: #ECECEC;
+    --footer-form-border-cl: rgba(255, 255, 255, 0.3);
+
+    /* shadow colors */
+    --shadow-cl: rgba(0, 0, 0, 0.15);
+
+    /* animation */
+    --transition-duration: 250ms;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
