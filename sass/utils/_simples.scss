@@ -1,0 +1,88 @@
+// @extend 
+
+.notification {
+    background-color: #ccc;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.notification-error {
+    @extend .notification;
+    background-color: red;
+
+}
+
+.notification-succes {
+    @extend .notification;
+    background-color: green;
+}
+
+// Шаблоны Placeholder 
+
+%notification {
+    background-color: #ccc;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.notification-error {
+    @extend %notification;
+    background-color: red;
+
+}
+
+.notification-succes {
+    @extend %notification;
+    background-color: green;
+}
+
+// .fetures {
+//     @extend %list
+// }
+
+// Миксины
+
+//@mixin name () {
+// свойства  
+//}
+
+@mixin bordered ($color: black, $type: solid) {
+    border-top: 1px solid $color;
+    border-bottom: 1px solid $color;
+}
+
+p {
+    @include bordered (green)
+}
+
+div {
+    @include bordered ($type: dashed);
+}
+
+@mixin centeredFlex($type) {
+    display: $type;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    @include centeredFlex (flex);
+}
+
+div {
+    @include centeredFlex (flex);
+}
+
+button {
+    @include centeredFlex (inline-flex);
+}
+
+$icons: "facebook", "github", "linkedin", "twitter";
+
+@each $iconName in $icons {
+    .icon-#{$iconName} {
+        background-image: url('/images/#{$iconName}.svg');
+    }
+}
