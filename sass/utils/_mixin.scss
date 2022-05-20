@@ -2,13 +2,5 @@
     display: $type;
     align-items: center;
     justify-content: center;
+    // flex-wrap: wrap;
 }
-
-@mixin grid ($gap)  {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var($gap);
-}
-
-@mixin grid-item ($items, $indent) 
-{flex-basis: calc((100% - $indent * ($items - 1)) / $items);}

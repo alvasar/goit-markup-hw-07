@@ -1,0 +1,59 @@
+/*#region SECTION WORK*/
+.work {
+    padding-top: 0px;
+    padding-bottom: 94px;
+
+    &__container {
+        @extend %container;
+    }
+
+    &__title {
+        @extend %title;
+    }
+
+    &__list {
+        @extend %list;
+        @extend %grid;
+    }
+
+    &__item {
+        --item: 3;
+        // @extend %grid-item;
+    }
+
+    &__item:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    &__thumb {
+        position: relative;
+    }
+
+    &__image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__text {
+        position: absolute;
+        top: 100%;
+        left: 100%;
+    
+        transform: translate(-100%, -100%);
+        padding-top: 27px;
+        padding-bottom: 27px;
+        width: 100%;
+    
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--primary-background-color);
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+}
+
+/*#endregion*/
