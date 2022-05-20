@@ -82,11 +82,11 @@
     <main>
       <!--section hero-->
       <section class="hero hero--overlay">
-        <div class="container">
+        <div class="hero__container">
           <h1 class="hero__title">
             Эффективные решения <br />для вашего бизнеса
           </h1>
-          <button data-modal-open class="hero__btn btn" type="button">
+          <button data-modal-open class="hero__btn" type="button">
             Заказать услугу
           </button>
           <!-- modalka -->
@@ -106,7 +106,6 @@
                 <p class="modal-form__title">
                   Оставьте свои данные, мы вам перезвоним
                 </p>
-
                 <label class="modal-form__field">
                   <span class="modal-form__label">Имя</span>
                   <input
@@ -173,15 +172,15 @@
                   ></textarea>
                 </label>
 
-                <label class="checkbox-field">
+                <label class="checkbox">
                   <input
-                    class="checkbox visually-hidden"
+                    class="checkbox__standart-icon"
                     type="checkbox"
                     name="policy"
                     value="policy"
                   />
                   <svg
-                    class="checkbox__icon"
+                    class="checkbox__custom-icon"
                     aria-label="check"
                     width="16"
                     height="15"
@@ -208,16 +207,16 @@
         </div>
       </section>
       <!--section feature-->
-      <section class="feature">
-        <div class="container">
-          <h2 class="title feature__title--visually-hidden">
+      <section class="features">
+        <div class="features__container">
+          <h2 class="title features__title--visually-hidden">
             Преимущества студии
           </h2>
-          <ul class="feature-list">
-            <li class="feature-item">
-              <div class="feature-item__icon-group">
+          <ul class="feature">
+            <li class="feature__item">
+              <div class="feature__item-group">
                 <svg
-                  class="feature-item__icon"
+                  class="feature__item-icon"
                   aria-label="Внимание к деталям"
                   width="70"
                   height="70"
@@ -225,8 +224,8 @@
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
-              <h3 class="feature-item__subtitle">Внимание к деталям</h3>
-              <p class="feature-item__text">
+              <h3 class="feature__item-subtitle">Внимание к деталям</h3>
+              <p class="feature__item-text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>

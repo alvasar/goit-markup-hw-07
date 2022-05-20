@@ -1,35 +1,21 @@
 /*#region SECTION FEATURES*/
-.feature {
+.features {
     padding: 94px 0px 94px 0px;
+
+    &__title--visually-hidden {
+        @extend %visually-hidden;
+    }
 }
 
-.feature__title--visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-     margin: -1px;
+.feature {
+    @include flex (flex);
+    @extend %list;
+
+    &__item {
+        @include grid-item (3, 30px);
+     }
 }
 
-.feature-list {
-    display: flex;
-    flex-wrap: wrap;
-
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.feature-item {
-    margin-right: 30px;
-    margin-bottom: 0;
-    width: calc((100% - 90px) / 4);
-}
 
 .feature-item:nth-child(4n) {
     margin-right: 0;

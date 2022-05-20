@@ -1,0 +1,63 @@
+/*#region Placeholders*/
+%list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+%visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+%container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid tomato;
+}
+
+%title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+%btn {
+    border: 0;
+    box-shadow: 0px 4px 4px var(--shadow-cl);
+    border-radius: 4px;
+    padding: 10px 32px;
+
+    background-color: var(--accent-color);
+    color: var(--primary-background-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    min-width: 200px;
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
+}
+%btn:hover, 
+%btn:focus {
+    background-color: #0B5E9E;
+}
+
+ /*#endregion*/
