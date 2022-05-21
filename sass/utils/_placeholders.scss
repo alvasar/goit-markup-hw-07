@@ -1,4 +1,16 @@
 /*#region Placeholders*/
+%container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+%section {
+    padding: 94px 0px 94px 0px;
+}
+
 %list {
     padding: 0;
     margin: 0;
@@ -18,14 +30,7 @@
     margin: -1px;
 }
 
-%container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    outline: 1px solid tomato;
-}
+
 
 %title {
     color: var(--title-text-color);

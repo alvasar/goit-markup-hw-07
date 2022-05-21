@@ -1,14 +1,17 @@
 /*#region SECTION FEATURES*/
-.features {
-    padding: 94px 0px 94px 0px;
+.section {
+    @extend %section;
+}
 
-    &__container {
-        @extend %container;
-    }
+.container {
+    @extend %container;
+}
 
-    &__title--visually-hidden {
-        @extend %visually-hidden;
-    }
+.title {
+    @extend %title;
+}
+.feature-title {
+    @extend %visually-hidden;
 }
 
 .feature {

@@ -2,19 +2,18 @@
 .page-footer {
     padding: 60px  60px;
     background-color: var(--secondary-background-color);
-    width: 100%;
-
-    &__container {
-         @include centeredFlex(flex);
-         align-items: baseline;
-
-         @extend %container;
-    }
-
-    &__logo {
-        color: var(--primary-background-color);
-    }
+    width: 100%; 
 }
+
+.container {
+    @extend %container;
+}
+
+.page-footer__container {
+    @include centeredFlex(flex);
+    align-items: baseline;
+}
+
 .logo {
     font-family: var(--secondary-font);
     font-weight: 700;
@@ -26,6 +25,10 @@
     &__web {
         color: var(--accent-color);
     }
+}
+
+.page-footer__logo {
+    color: var(--primary-background-color);
 }
 
 .address {
@@ -149,7 +152,7 @@
 
     &__icon {
         position: absolute;
-        right: 28px;
+        right: 15px;
     
         display: inline-block;
     

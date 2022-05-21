@@ -1,20 +1,20 @@
 /*#region SECTION CLIENTS*/
 
-.clients {
-    padding: 94px 0px 94px 0px;
+.section {
+    @extend %section;
+}
 
-    &__container {
-        @extend %container;
-    }
+.container {
+    @extend %container;
+}
 
-    &__title {
-        @extend %title;
-    }
+.title {
+    @extend %title;
+}
 
-    &__list {
-        @extend %list;
-        @include centeredFlex(flex);
-    }
+.client-list {
+    @extend %list;
+    @include centeredFlex(flex);
 }
 
 .client {

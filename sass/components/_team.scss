@@ -1,20 +1,20 @@
 /*#region SECTION TEAM*/
-.team {
-    padding: 94px 0px 94px 0px;
+.setion-team {
+    @extend %section;
     background-color: var(--third-background-color);
+}
 
-    &__container {
-        @extend %container;
-    }
+.container {
+    @extend %container;
+}
 
-    &__title {
-        @extend %title;
-    }
+.title {
+    @extend %title;
+}
 
-    &__list {
+.team-list {
         @extend %list;
         @extend %grid;
-    }
 }
 
 .team-card {

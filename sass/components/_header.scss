@@ -2,13 +2,15 @@
 .page-header {
     background-color: var(--white-color);
     border-bottom: 1px solid var(--portfolio-border-cl);
-
-    &__container {
-        @include centeredFlex (flex);
-
-        @extend %container;
-    }
 }
+
+.container {
+    @extend %container;
+}
+
+.page-header__container {
+    @include centeredFlex (flex);
+  }
 
 .logo {
     font-family: var(--secondary-font);

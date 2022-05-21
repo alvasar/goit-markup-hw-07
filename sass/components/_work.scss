@@ -1,21 +1,20 @@
 /*#region SECTION WORK*/
-.work {
+.section-work {
     padding-top: 0px;
     padding-bottom: 94px;
+}
+.container {
+    @extend %container;
+}
 
-    &__container {
-        @extend %container;
-    }
+.title-work {
+    @extend %title;
+}
 
-    &__title {
-        @extend %title;
-    }
-
-    &__list {
-        @extend %list;
-        @extend %grid;
-    }
-
+.work {
+    @extend %list;
+    @extend %grid;
+   
     &__item {
         --item: 3;
         // @extend %grid-item;
